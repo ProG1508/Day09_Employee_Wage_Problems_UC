@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#This program is to check employee is present or absent using random value  
+
+isPresent=$((RANDOM%3))
+perHourSalary=20;
+workingHour=0;
+
+if [ $isPresnt -eq 0 ]
+then
+	echo "Employee is absent" 
+	echo "Working Hour= $(($workingHour * 8 ))"
+	echo "Total_salary= $(($workingHour * $perHourSalary))"
+
+elif [ $isPresent -eq 1 ]
+then
+	echo "Employee is Present for Full Day" 
+	echo "Working Hour= $(($workingHour * 8 ))"
+	echo "Total_salary= $(($workingHour * $perHourSalary))"
+
+else 
+
+	echo "Employee is Present for Half Day" 
+	echo "Working Hour= $(($workingHour * 4 ))"
+	echo "Total_salary= $(($workingHour * $perHourSalary))"
+
+fi
+
+ 
+ 
